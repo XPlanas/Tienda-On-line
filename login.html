@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <header>
+      <img class="logom" src="imgs/logo.png" alt="logo">
+      <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+            <h1 class="headh1">Login</h1>
+
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+            <div class="logo">
+              <h1>ROOKIE</h1>
+            </div>
+            <div class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ropa.html">ropa</a></li>
+              <li><a href="accesorios.html">accesorios</a></li>
+              <li><a href="util.html">utiles</a></li>
+              <li><a href="stickers.html">stickers</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+  </header>
+
+  <main>
+    <a href="carro.html"><img class="cart" src="imgs/elcarro.png" alt="carro"></a>
+    <a href="carro.html"><img class="usr" src="imgs/Sample_User_Icon.png" alt="carro"></a>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form action="{{ url_for('login') }}" method="post">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <button type="submit">Login</button>
+      </form>
+  </div>
+  
+    <section class="section-top-sellers">
+      <h2>ROOKIE INC</h2>
+      <p>Todos los derechos reservados</p>
+      <a href="terms.html">Terminos y condiciones</a>
+      <div class="product-grid">
